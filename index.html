@@ -8,6 +8,10 @@
     <title>Gestor de tareas</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/data_menu.js"></script>
 </head>
 
 <body>
@@ -17,11 +21,19 @@
         <nav>
             <ul>
                 <li><i class="material-icons">add_box</i><span>Nuevo proyecto</span></li>
-                <li><i class="material-icons">dashboard</i><span>Alexa</span></li>
-                <li><i class="material-icons">dashboard</i><span>WhatsApp API</span></li>
+                <li id="alexa_but"><i class="material-icons">dashboard</i><span>Alexa</span></li>
+                <li id="whats_but"><i class="material-icons">dashboard</i><span>WhatsApp API</span></li>
             </ul>
         </nav>
     </aside>
+    <div id="container">
+        <div id="alexa" class="hide">
+            <p>Alexa</p>
+        </div>
+        <div id="whats" class="hide">
+            <p>WhatsApp API</p>
+        </div>
+    </div>
 </body>
 
 </html>

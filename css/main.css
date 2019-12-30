@@ -1,0 +1,11 @@
+#container {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    margin: 0 auto;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
