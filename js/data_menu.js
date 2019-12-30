@@ -1,5 +1,3 @@
-var hide = $('.hide');
-var show = $('.show');
 $(document).ready(function(){
     $("#alexa_but").on('click', function(event){
         $('#alexa').addClass('show').removeClass('hide');
