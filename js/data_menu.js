@@ -1,10 +1,9 @@
 $(document).ready(function(){
-    $("#alexa_but").on('click', function(event){
-        $('#alexa').addClass('show').removeClass('hide');
-        $('#whats').addClass('hide').removeClass('show');
+    var clicked_li;
+    $('ul').on('click', 'li', function(){
+        clicked_li = $(this).attr('id'); 
     });
-    $("#whats_but").on('click', function(event){
-        $('#whats').addClass('show').removeClass('hide');
-        $('#alexa').addClass('hide').removeClass('show');
-    });
+    $('#add_project').on('click', function(){
+        console.log(clicked_li);
+    })
   });
